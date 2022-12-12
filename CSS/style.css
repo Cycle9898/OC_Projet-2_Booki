@@ -1,0 +1,774 @@
+/*General settings*/
+
+body {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin: auto;
+    max-width: 1400px;
+    padding: 0px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Header*/
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-booki img {
+    width: 60px;
+}
+
+/*Nav menu*/
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 44px 30px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.nav-menu a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+/*Main*/
+
+main {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/*Main title and section titles*/
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title h1,
+.offers-main h2,
+.offers-pop h2,
+.activities h2 {
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+.title h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.title p,
+.info-search p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0px;
+}
+
+/* Filter title, more link and footer titles*/
+
+.filters h3,
+.more-link,
+.footer-menu-title {
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+/*Search and filters*/
+
+.search-filters {
+    margin-bottom: 38px;
+}
+
+/* Search */
+
+.search {
+    margin-bottom: 30px;
+}
+
+.search-mod {
+    display: flex;
+    height: 52px;
+}
+
+.fa-location-dot,
+.search-field,
+.search-button {
+    padding: 15px 18px;
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.fa-location-dot {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-field,
+.search-button {
+    font-family: inherit;
+}
+
+.search-field {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.search-button {
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/*hide mobile search logo*/
+
+.search-button-mobile {
+    display: none;
+}
+
+/*Filters*/
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.filters h3 {
+    margin: 0px;
+}
+
+/*Filters buttons*/
+
+.filters-mod {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px 0px 0px 30px;
+}
+
+.filters-mod li {
+    margin-right: 30px;
+}
+
+.filters-button {
+    padding: 14px 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    background-color: white;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.filters-button span {
+    font-size: 1.063em;
+    font-weight: 700;
+    text-align: start;
+}
+
+.filters-button i {
+    color: #0065FC;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.filters-button:hover {
+    background-color: #DEEBFF;
+}
+
+/*Info*/
+
+.info-search {
+    display: flex;
+    align-items: center;
+}
+
+.fa-info {
+    color: #0065FC;
+    font-size: 0.8em;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    padding: 7px 11px;
+    margin-right: 8px;
+}
+
+/*Popular, main offers cards and activities title common settings*/
+
+.offers-card-text-title h3,
+.pop-card-text-title h3,
+.activities-card-text h3 {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.offers-card-text-title h3,
+.pop-card-text-title h3 {
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.offers-card-text-title p,
+.pop-card-text-title p {
+    font-size: 0.775em;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.fa-star {
+    font-size: 0.75em;
+    letter-spacing: -1px;
+}
+
+.star-blue {
+    color: #0065FC;
+}
+
+.star-grey {
+    color: #F2F2F2;
+}
+
+/*Offers*/
+
+.offers {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+/*Offers main*/
+
+.offers-main {
+    width: 67%;
+    margin-right: 40px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 42px 40px 45px;
+}
+
+.offers-main h2 {
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
+
+.offers-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offers-card {
+    width: 31%;
+    min-height: 200px;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+}
+
+.offers-card-article {
+    height: 100%;
+}
+
+.offers-card-img,
+.offers-card-img img {
+    height: 115px;
+}
+
+.offers-card-img img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.offers-card-text {
+    min-height: 75px;
+    padding: 10px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*More link*/
+
+.more-link {
+    margin: 10px 0px 0px;
+}
+
+/*Popular offers*/
+
+.offers-pop {
+    width: 33%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 42px 38px 5px;
+}
+
+.offers-pop h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 26px;
+}
+
+.fa-chart-line {
+    color: #0065FC;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.pop-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-card {
+    min-height: 145px;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+}
+
+.pop-card-article {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.pop-card-img,
+.pop-card-img img {
+    height: 135px;
+}
+
+.pop-card-img {
+    width: 40%;
+}
+
+.pop-card-img img {
+    width: 100%;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
+.pop-card-text {
+    width: 60%;
+    min-height: 135px;
+    padding: 10px 15px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Activities*/
+
+.activities h2 {
+    margin-top: 0px;
+}
+
+.activities-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activities-card,
+.activities-card-article {
+    min-height: 445px;
+}
+
+.activities-card {
+    width: 23%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+}
+
+.activities-card-img,
+.activities-card-img img {
+    height: 390px;
+}
+
+.activities-card-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activities-card-text {
+    display: flex;
+    align-items: center;
+    min-height: 55px;
+    padding: 5px 20px;
+}
+
+.activities-card-text h3 {
+    margin: 0px;
+}
+
+/*Footer*/
+
+.footer-main {
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 45px 0px 50px 50px;
+}
+
+.footer-sub {
+    width: 33.33%;
+}
+
+.footer-menu-title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.footer-menu li {
+    margin: 10px 0px;
+}
+
+/* Responsive Design*/
+
+/*Medium devices like tablet (width <992 px)*/
+
+@media (max-width: 991.9px) {
+
+    .main-container {
+        padding: 0px 60px;
+    }
+
+    /*Main*/
+
+    main {
+        margin-top: 14px;
+        margin-bottom: 70px;
+    }
+
+    /*Filters*/
+
+    /*Filters buttons*/
+
+    .filters-mod {
+        margin: 0px 0px 0px 15px;
+    }
+
+    .filters-mod li {
+        margin-right: 15px;
+    }
+
+    /*Offers*/
+
+    .offers {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    .offers-main,
+    .offers-pop {
+        width: 100%;
+    }
+
+    /*Main offers*/
+
+    .offers-main {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    /*Popular offers*/
+
+    .offers-pop {
+        padding-top: 32px;
+        padding-bottom: 45px;
+    }
+
+    .pop-details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pop-card {
+        width: 31%;
+        margin-bottom: 0px;
+    }
+
+    .pop-card-text {
+        padding-top: 5px;
+    }
+
+    /*Activities*/
+
+    .activities h2 {
+        margin-bottom: 30px;
+    }
+
+    .activities-card,
+    .activities-card-article {
+        min-height: 270px;
+    }
+
+    .activities-card {
+        width: 21%;
+    }
+
+    .activities-card-img,
+    .activities-card-img img {
+        height: 210px;
+    }
+
+    .activities-card-text {
+        min-height: 60px;
+    }
+
+}
+
+/*Small devices like smartphone (width <768 px)*/
+
+@media (max-width: 767.9px) {
+
+    .main-container {
+        padding: 0px;
+        min-width: 320px;
+    }
+
+    /*Header*/
+
+    .header-main {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .logo-booki {
+        margin: 20px 0px;
+    }
+
+    /*Nav menu*/
+
+    .nav-menu li {
+        width: 50%;
+    }
+
+    .nav-menu a {
+        border-bottom: 2px solid #F2F2F2;
+        padding: 25px 0px;
+    }
+
+    .nav-menu a:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    /*Main*/
+
+    main {
+        margin-top: 30px;
+        margin-bottom: 55px;
+    }
+
+    /*Search and filters*/
+
+    .search-filters {
+        padding: 0px 20px;
+    }
+
+    /*Title*/
+
+    .title {
+        margin: 0px 0px 35px;
+    }
+
+    /*Search*/
+
+    .search-mod {
+        justify-content: center;
+    }
+
+    .search-field {
+        width: 100%;
+    }
+
+    /*Hide search text and reveal mobile search logo*/
+
+    .search-button-mobile {
+        display: inline;
+    }
+
+    .search-button-desktop {
+        display: none;
+    }
+
+    /*Filters*/
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
+    }
+
+    .filters h3 {
+        margin-bottom: 15px;
+    }
+
+    /*Filters buttons*/
+
+    .filters-mod {
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    .filters-mod li {
+        width: 48%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .filters-button {
+        width: 100%;
+        padding: 16px 14px;
+    }
+
+    .filters-button span {
+        font-size: 0.8em;
+    }
+
+    /*Info*/
+
+    .info-search {
+        align-items: baseline;
+    }
+
+    /*Offers*/
+
+    .offers {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    /*Offers main*/
+
+    .offers-main {
+        background-color: white;
+        border-radius: 0px;
+        padding: 25px 20px;
+        margin-bottom: 0px;
+    }
+
+    .offers-main h2 {
+        margin-bottom: 20px;
+    }
+
+    .offers-details {
+        flex-flow: column nowrap;
+    }
+
+    .offers-card {
+        width: 100%;
+    }
+
+    .more-link {
+        display: none;
+    }
+
+    /*Popular offers*/
+
+    .offers-pop {
+        border-radius: 0px;
+        padding: 25px 20px 35px;
+    }
+
+    .pop-details {
+        flex-direction: column;
+    }
+
+    .pop-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pop-card-text {
+        padding-top: 10px;
+    }
+
+    /*Activities*/
+
+    .activities {
+        padding: 0px 20px;
+    }
+
+    .activities h2 {
+        margin-bottom: 20px;
+    }
+
+    .activities-details {
+        flex-direction: column;
+    }
+
+    .activities-card,
+    .activities-card-article {
+        min-height: 190px;
+    }
+
+    .activities-card {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .activities-card-img,
+    .activities-card-img img {
+        height: 135px;
+    }
+
+    .activities-card-text {
+        min-height: 55px;
+    }
+
+    /*Footer*/
+
+    .footer-main {
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 15px;
+    }
+
+    .footer-sub {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+}
