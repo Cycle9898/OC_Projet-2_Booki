@@ -35,8 +35,6 @@ a {
 
 .nav-menu {
 	display: flex;
-	list-style-type: none;
-	margin: 0px;
 	padding-left: 0px;
 }
 
@@ -156,12 +154,11 @@ main {
 	margin-bottom: 40px;
 }
 
-/*Filters buttons*/
+/*Filters tags*/
 
 .filters-mod {
 	display: flex;
 	align-items: center;
-	list-style-type: none;
 	column-gap: 30px;
 	margin-left: 30px;
 }
@@ -173,6 +170,7 @@ main {
 	background-color: white;
 	display: flex;
 	align-items: center;
+	column-gap: 10px;
 }
 
 .filters-tag span {
@@ -184,7 +182,6 @@ main {
 .filters-tag i {
 	color: #0065fc;
 	font-size: 1.2em;
-	margin-right: 10px;
 }
 
 .filters-tag:hover {
@@ -196,6 +193,7 @@ main {
 .info-search {
 	display: flex;
 	align-items: center;
+	column-gap: 8px;
 }
 
 .fa-info {
@@ -204,7 +202,6 @@ main {
 	border: 1px solid #d9d9d9;
 	border-radius: 50%;
 	padding: 7px 11px;
-	margin-right: 8px;
 }
 
 /*Popular, main offers cards and activities title common settings*/
@@ -218,7 +215,6 @@ main {
 
 .offers-card-text-title h3,
 .pop-card-text-title h3 {
-	margin-top: 0px;
 	margin-bottom: 7px;
 }
 
@@ -245,6 +241,7 @@ main {
 
 .offers {
 	display: flex;
+	column-gap: 40px;
 	margin-bottom: 60px;
 }
 
@@ -252,7 +249,6 @@ main {
 
 .offers-main {
 	width: 67%;
-	margin-right: 40px;
 	background-color: #f2f2f2;
 	border-radius: 20px;
 	padding: 42px 40px 45px;
@@ -266,6 +262,8 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	row-gap: 30px;
+	margin-bottom: 30px;
 }
 
 .offers-card {
@@ -273,7 +271,6 @@ main {
 	min-height: 200px;
 	padding: 5px;
 	background-color: white;
-	margin-bottom: 30px;
 	border-radius: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
@@ -335,13 +332,13 @@ main {
 .pop-details {
 	display: flex;
 	flex-direction: column;
+	row-gap: 30px;
 }
 
 .pop-card {
 	min-height: 145px;
 	padding: 5px;
 	background-color: white;
-	margin-bottom: 30px;
 	border-radius: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
@@ -379,6 +376,7 @@ main {
 /*Activities*/
 
 .activities-details {
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -429,14 +427,11 @@ main {
 }
 
 .footer-menu {
-	list-style-type: none;
-	padding-left: 0px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
 	font-size: 1em;
 	font-weight: 400;
-}
-
-.footer-menu li {
-	margin: 10px 0px;
 }
 
 /* Responsive Design*/
@@ -457,33 +452,24 @@ main {
 
 	/*Filters*/
 
-	/*Filters buttons*/
+	/*Filters tags*/
 
 	.filters-mod {
 		margin-left: 15px;
-	}
-
-	.filters-mod li {
-		margin-right: 15px;
+		column-gap: 15px;
 	}
 
 	/*Offers*/
 
 	.offers {
 		flex-direction: column;
+		row-gap: 50px;
 		margin-bottom: 70px;
 	}
 
 	.offers-main,
 	.offers-pop {
 		width: 100%;
-	}
-
-	/*Main offers*/
-
-	.offers-main {
-		margin-right: 0px;
-		margin-bottom: 50px;
 	}
 
 	/*Popular offers*/
@@ -500,7 +486,6 @@ main {
 
 	.pop-card {
 		width: 31%;
-		margin-bottom: 0px;
 	}
 
 	.pop-card-text {
@@ -509,8 +494,8 @@ main {
 
 	/*Activities*/
 
-	.activities h2 {
-		margin-bottom: 30px;
+	.activities-details {
+		margin-top: 30px;
 	}
 
 	.activities-card,
@@ -612,25 +597,21 @@ main {
 	.filters {
 		flex-direction: column;
 		align-items: stretch;
-		margin-bottom: 20px;
+		row-gap: 15px;
+		margin-bottom: 35px;
 	}
 
-	.filters h3 {
-		margin-bottom: 15px;
-	}
-
-	/*Filters buttons*/
+	/*Filters tags*/
 
 	.filters-mod {
 		flex-wrap: wrap;
-		margin: 0px;
+		margin-left: 0px;
 		justify-content: space-between;
+		row-gap: 20px;
 	}
 
 	.filters-mod li {
 		width: 48%;
-		margin-right: 0px;
-		margin-bottom: 20px;
 	}
 
 	.filters-tag {
@@ -661,7 +642,6 @@ main {
 		background-color: white;
 		border-radius: 0px;
 		padding: 25px 20px;
-		margin-bottom: 0px;
 	}
 
 	.offers-main h2 {
@@ -670,6 +650,8 @@ main {
 
 	.offers-details {
 		flex-flow: column nowrap;
+		margin-bottom: 0;
+		row-gap: 10px;
 	}
 
 	.offers-card {
@@ -689,11 +671,11 @@ main {
 
 	.pop-details {
 		flex-direction: column;
+		row-gap: 10px;
 	}
 
 	.pop-card {
 		width: 100%;
-		margin-bottom: 10px;
 	}
 
 	.pop-card-text {
@@ -706,12 +688,10 @@ main {
 		padding: 0px 20px;
 	}
 
-	.activities h2 {
-		margin-bottom: 20px;
-	}
-
 	.activities-details {
 		flex-direction: column;
+		row-gap: 25px;
+		margin-bottom: 20px;
 	}
 
 	.activities-card,
@@ -721,7 +701,6 @@ main {
 
 	.activities-card {
 		width: 100%;
-		margin-bottom: 25px;
 	}
 
 	.activities-card-img,
@@ -739,10 +718,10 @@ main {
 		flex-direction: column;
 		padding-left: 30px;
 		padding-bottom: 15px;
+		row-gap: 45px;
 	}
 
 	.footer-sub {
 		width: 100%;
-		margin-bottom: 45px;
 	}
 }
